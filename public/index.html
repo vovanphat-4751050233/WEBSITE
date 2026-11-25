@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQAS – Điểm danh QR</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="side">
+      <div class="brand">
+        <img src="logo.svg" alt="Logo SQAS">
+        <div>
+          <b>SQAS</b>
+          <small>Điểm danh bằng mã QR</small>
+        </div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="side-foot">
+        <div id="who"></div>
+        <button id="logout" hidden>Đăng xuất</button>
+      </div>
+    </aside>
+    <div class="content">
+      <main id="app"></main>
+    </div>
+  </div>
+  <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
